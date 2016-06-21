@@ -137,15 +137,22 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
-.first-page-main-btn:hover{
+.first-page-main-btn:hover, .first-page-main-btn:focus{
     color: #fff;
     text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 35px -15px #000 inset,
+                0px 20px 35px 0px rgba(32, 43, 7, 0.25);
 }
 .first-page-main-btn:active{
     color: #fff;
     text-decoration: none;
     border: none;
     outline: none;
+    box-shadow: 0px 0px 35px -15px #000 inset,
+    0px 20px 35px 0px rgba(32, 43, 7, 0.25);
+    padding-top: 15px;
 }
 .first-page-clients{
     text-align: center;
@@ -421,6 +428,17 @@ body{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+.second-page-cart-amount-btn:focus, .second-page-cart-amount-btn:hover, .second-page-cart-amount-btn:active{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 35px -15px #000 inset;
+}
+.second-page-cart-amount-btn:active{
+    padding-top: 3px;
+
+}
 .second-page-cart-list{
     height: 170px;
     background-color: rgba(116, 148, 65,.8);
@@ -488,7 +506,6 @@ body{
     padding-top: 3px;
     padding-left: 1.5px;
 }
-
 .second-page-other{
     height: 170px;
     padding-left: 40px;
@@ -525,6 +542,72 @@ body{
 }
 .second-page-other-text{
     padding-left: 35px;
+}
+
+
+.second-page-order{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    min-height: 1000px;
+    border-radius: 10px;
+    background-color: #73b23b;
+    box-shadow: 0px 5px 20px 0px rgba(21, 24, 27, 0.75);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.second-page-order-left{
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.second-page-order-head{
+    padding-bottom: 30px;
+}
+.second-page-order-title{
+    font-size: 36px;
+    font-family: "Roboto";
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.second-page-order-text{
+    font-size: 16px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.second-page-delivery-btn{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #faa633;
+    font-size: 14px;
+    font-family: "Core Sans A 55 Medium";
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.second-page-pickup-btn{
+    width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    color: #818181;
+    font-size: 14px;
+    font-family: "Core Sans A 55 Medium";
+    text-transform: uppercase;
+}
+
+
+
+
+
+.second-page-order-right{
+    max-width: 420px;
 }
 @media (max-width: 415px) {
     .first-page-header-logo{
