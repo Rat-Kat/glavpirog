@@ -307,21 +307,21 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 100vh;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
 }
 .second-page-flexbox{
-    width: 73vw;
+    width: 83%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 8vh;
-
 }
 .second-page-menu{
     flex-grow: 2;
-    flex-basis: 300px;
+    flex-basis: 540px;
     max-width: 780px;
 
 }
@@ -333,6 +333,8 @@ body{
     border: 1px solid #595959;
     background-color: rgba(255, 255, 255, 0);
     min-height: 604px;
+    padding-right: 2%;
+    padding-left: 3%;
 
 }
 .second-page-head{
@@ -352,7 +354,7 @@ body{
     margin-bottom: 3vh;
 }
 .second-page-menu-title{
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     font-size: 22px;
     font-family: "Roboto";
     font-weight: bold;
@@ -360,21 +362,136 @@ body{
 .second-page-menu-ingredients{
     font-size: 18px;
     font-family: "Roboto Condensed";
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     height: 100%;
 }
 .menu-ingredients-price{
     float: right;
 }
 .menu-salty-cake{
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 .menu-salty-sweet-cake{
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 .second-page-right-section{
     flex-grow: 1;
+    align-self: flex-end;
     flex-basis: 200px;
     max-width: 420px;
+}
+.second-page-cart{
+    height: 400px;
 
+}
+.second-page-cart-head{
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+.second-page-cart-amount{
+    background-color: rgba(136,176,71,.8);
+    border-radius: 0px 7px 0px 0px;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.second-page-cart-amount div{
+    padding-bottom: 12px;
+    font-size: 17px;
+    font-family: "Roboto Condensed";
+}
+.second-page-cart-sum-numbers{
+    float: right;
+}
+.second-page-cart-sum-total{
+    float: right;
+}
+.icon-shopping_cart{
+    color: #e5a440;
+}
+.icon-shopping_bag{
+    color: #e5a440;
+}
+.second-page-cart-amount-btn{
+    width: 100%;
+    height: 45px;
+    background-color: #e5a440;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-family: "Core Sans A 55 Medium";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.second-page-cart-list{
+    height: 170px;
+    background-color: rgba(116, 148, 65,.8);
+    padding-left: 9%;
+    padding-right: 9%;
+    border-radius: 0px 0px 7px 0px;
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: "Roboto Condensed";
+}
+.second-page-cart-list-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.second-page-cart-list-weights{
+    margin-right: 15px;
+}
+.second-page-cart-list-weight-green{
+    display: block;
+    width:15px;
+    height: 20px;
+    background-image: url("../img/sprite-weight.png");
+    background-position: 50% 100%;
+    float: left;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 10px;
+}
+.second-page-cart-list-weight{
+    display: block;
+    width:15px;
+    height: 20px;
+    background-image: url("../img/sprite-weight.png");
+   margin-left: 20px;
+    text-align: center;
+    padding-top: 2px;
+    color: #e5a440;
+}
+.second-page-cart-list-chosen{
+    flex-grow: 1;
+
+    flex-basis: 150px;
+}
+.glyphicon-triangle-left{
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+    padding-top: 3px;
+    padding-left: 2px;
+
+}
+.glyphicon-triangle-right{
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.second-page-other{
+    height: 170px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
