@@ -2,11 +2,10 @@ body{
     color: #fff;
 }
 .parallax {
-    background-image: url('../img/background_1page.jpg');
-    background-size: contain;
+    background: url('../img/background_1page.jpg') no-repeat;
+    background-size: cover;
     background-position: 50%;
     perspective: 1px;
-    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -15,7 +14,6 @@ body{
 }
 .first-page{
     padding-top: 2%;
-    height: 100vh;
 }
 .first-page-header{
     display: flex;
