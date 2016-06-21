@@ -1,0 +1,88 @@
+body{
+    color: #fff;
+}
+.parallax {
+    background-image: url('../img/background_1page.jpg');
+    background-size: contain;
+    background-position: 50%;
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    max-width: 1000px;
+}
+.first-page{
+    padding-top: 2%;
+    height: 100vh;
+}
+.first-page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.first-page-header-logo{
+    width: 160px;
+    margin-right: 70px;
+}
+.first-page-header-navbar{
+    flex-grow: 1;
+    flex-basis: 180px;
+    height: 20px;
+}
+.first-page-header-navbar-menu-dropdown{
+    height: 22px;
+}
+.icon-button{
+    float: left;
+    width: 18px;
+    margin-right: 20px;
+}
+.icon-line{
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.button-text{
+    font-size: 24px;
+    font-family: "Roboto";
+    line-height: 15px;
+}
+.dropdown-menu{
+    width: 220px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0;
+    margin-left: -17px;
+    background-color: #faa633;
+
+}
+.dropdown-menu li{
+    width: 100%;
+    height: 37px;
+    border-bottom: 1px solid #ffb95a ;
+}
+.dropdown-menu li a{
+    height: inherit;
+    border-radius: inherit;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+.dropdown-menu li:first-child{
+    border-radius: 20px 20px 0 0;
+}
+.dropdown-menu li:last-child{
+    border-radius:0 0 20px 20px;
+    border-bottom: none;
+}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus{
+    background-color: #73b23b;
+    color: #fff;
+}
