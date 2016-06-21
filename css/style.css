@@ -21,7 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 17vh;
+    padding-bottom: 15vh;
 }
 .first-page-header-logo{
     width: 160px;
@@ -98,11 +98,6 @@ body{
     border-right: 10px solid transparent;
     border-bottom: 10px solid #73b23b;
 }
-
-#menu ul li:first-child a:hover:after
-{
-    border-bottom-color: #73b23b;
-}
 .first-page-header-contact{
     text-align: center;
     font-size: 25px;
@@ -118,7 +113,7 @@ body{
     text-align: center;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 17vh;
+    padding-bottom: 15vh;
 }
 .first-page-main-text{
     font-size: 68px;
@@ -154,7 +149,7 @@ body{
 }
 .first-page-clients{
     text-align: center;
-    padding-bottom: 6vh;
+    padding-bottom: 8vh;
 }
 .first-page-clients img{
     width: 165px;
@@ -234,17 +229,18 @@ body{
     -o-transform: skewX(18deg);
     transform: skewX(18deg);
 }
-.first-page-footer{
+.first-to-second-page{
     background-color: rgba(0, 0, 0, .2);
     padding-top: 4vh;
 }
-.first-page-footer-icons{
+.first-to-second-page-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    }
-.first-page-footer-icons div{
+    padding-bottom: 1%;
+}
+.first-to-second-page-icons div{
     flex-grow: 1;
 }
 .glyphicon-ok{
@@ -278,18 +274,18 @@ body{
     font-size: 18px;
     font-family: "Open Sans";
 }
-.first-page-footer-statistics{
+.first-to-second-page-statistics{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
-.first-page-footer-statistics-numbers{
+.first-to-second-page-statistics-numbers{
     font-size: 24px;
     font-family: "Roboto";
     font-weight: bold;
     text-transform: uppercase;
 }
-.first-page-footer-statistics-text{
+.first-to-second-page-statistics-text{
     font-size: 14px;
     font-family: "Roboto Regular";
     font-weight: lighter;
@@ -328,6 +324,7 @@ body{
 .second-page-menu-table{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     border-radius: 10px;
     border: 1px solid #595959;
@@ -338,7 +335,7 @@ body{
 
 }
 .second-page-head{
-    font-size: 34px;
+    font-size: 30px;
     font-family: "Roboto";
     font-weight: bold;
     padding-bottom: 2vh;
@@ -355,15 +352,14 @@ body{
 }
 .second-page-menu-title{
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Roboto";
     font-weight: bold;
 }
 .second-page-menu-ingredients{
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Roboto Condensed";
     padding-bottom: 5px;
-    height: 100%;
 }
 .menu-ingredients-price{
     float: right;
@@ -385,7 +381,7 @@ body{
 
 }
 .second-page-cart-head{
-    font-size: 30px;
+    font-size: 26px;
     font-family: "Roboto";
     font-weight: 600;
     padding-top: 5%;
@@ -399,7 +395,7 @@ body{
 }
 .second-page-cart-amount div{
     padding-bottom: 12px;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Roboto Condensed";
 }
 .second-page-cart-sum-numbers{
@@ -428,11 +424,11 @@ body{
 .second-page-cart-list{
     height: 170px;
     background-color: rgba(116, 148, 65,.8);
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 7%;
+    padding-right: 7%;
     border-radius: 0px 0px 7px 0px;
     padding-top: 15px;
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Roboto Condensed";
 }
 .second-page-cart-list-row{
@@ -442,7 +438,7 @@ body{
     padding-bottom: 8px;
 }
 .second-page-cart-list-weights{
-    margin-right: 15px;
+    margin-right: 7px;
 }
 .second-page-cart-list-weight-green{
     display: block;
@@ -462,13 +458,16 @@ body{
     background-image: url("../img/sprite-weight.png");
    margin-left: 20px;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 3px;
     color: #e5a440;
 }
 .second-page-cart-list-chosen{
     flex-grow: 1;
 
     flex-basis: 150px;
+}
+.second-page-cart-list-totals{
+    text-align: center;
 }
 .glyphicon-triangle-left{
     font-size: 8px;
@@ -477,7 +476,7 @@ body{
     border-radius: 50%;
     background-color: #333;
     padding-top: 3px;
-    padding-left: 2px;
+    padding-left: 0px;
 
 }
 .glyphicon-triangle-right{
@@ -487,11 +486,243 @@ body{
     border-radius: 50%;
     background-color: #333;
     padding-top: 3px;
-    padding-left: 3.5px;
+    padding-left: 1.5px;
 }
 
 .second-page-other{
     height: 170px;
     padding-left: 40px;
-    padding-top: 20px;
+    padding-top: 0px;
+    font-size: 14px;
+    font-family: "Roboto Condensed";
+}
+.second-page-other .row{
+    padding-bottom: 15px;
+}
+.second-page-other-car{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/sprite.png');
+    float: left;
+
+}
+.second-page-other-clock{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/sprite.png');
+    background-position: 50% 100%;
+    float: left;
+}
+.second-page-other-wallet{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/sprite.png');
+    background-position: 100% 100%;
+    float: left;
+}
+.second-page-other-text{
+    padding-left: 35px;
+}
+@media (max-width: 415px) {
+    .first-page-header-logo{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .first-page-header-navbar{
+        margin-bottom: 20px;
+    }
+    .first-page-main-text{
+        font-size: 40px;
+    }
+    .first-page-main{
+        margin-top: -40px;
+    }
+    .first-page-clients img:nth-child(2){
+        display: none;
+    }
+    .first-page-clients img:first-child {
+        margin-right: 0px;
+    }
+    .icon-ok-circled-text{
+        font-size: 12px;
+    }
+    .first-to-second-page-statistics-numbers{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 620px) {
+    .first-page-header {
+        justify-content: center;
+    }
+    .first-page-header-navbar{
+        flex-grow: 0;
+        flex-basis: 180px;
+    }
+    .first-page-clients img:nth-child(3){
+        display: none;
+    }
+    .first-page-clients img:nth-child(2){
+        margin-right: 0px;
+    }
+    .first-page-clients-arrow-right {
+        top: -10px;
+    }
+    .first-page-clients-arrow-left {
+        top: -10px;
+    }
+}
+@media (max-width: 1030px) {
+
+    .first-page-clients img:last-child{
+        display: none;
+    }
+    .first-page-clients img:nth-child(3){
+        margin-right: 0px;
+    }
+    .first-page-clients-arrow-right {
+        right: 4%;
+        top: -15px;
+    }
+    .first-page-clients-arrow-left {
+        left: 4%;
+        top: -15px;
+    }
+    .second-page-flexbox{
+        width: 90%;
+    }
+    .menu-table-left{
+        flex-basis: 270px;
+    }
+    .menu-table-right{
+        flex-basis: 270px;
+    }
+    .second-page-cart-amount div{
+        font-size: 10px;
+
+    }
+    .second-page-cart-amount {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+}
+@media (max-width: 1370px) {
+    .first-page-header{
+        padding-bottom: 15vh;
+    }
+    .first-page-main {
+        padding-bottom: 15vh;
+    }
+    .first-page-clients{
+        padding-bottom: 10vh;
+    }
+   .second-page-menu-title{
+        font-size: 20px;
+    }
+    .second-page-menu-ingredients{
+        font-size: 16px;
+    }
+    .second-page-head{
+        font-size: 30px;
+
+    }
+    .second-page-cart-head {
+        font-size: 26px;
+    }
+    .second-page-cart-amount div{
+        font-size: 15px;
+
+    }
+    .second-page-cart-list{
+        font-size: 12px;
+    }
+    .second-page-cart-list-weights{
+        margin-right: 7px;
+    }
+    .second-page-cart-list{
+
+        padding-left: 7%;
+        padding-right: 7%;
+
+    }
+    .glyphicon-triangle-left{
+        padding-left: 0px;
+
+    }
+    .glyphicon-triangle-right{
+        padding-left: 1.5px;
+    }
+    .second-page-other{
+        padding-top: 0px;
+        font-size: 14px;
+        font-family: "Roboto Condensed";
+    }
+    .second-page-other-text{
+        padding-left: 35px;
+    }
+    .second-page-other .row{
+        padding-bottom: 15px;
+    }
+}
+@media (min-width: 1370px) {
+    .first-page-header{
+        padding-bottom: 17vh;
+    }
+    .first-page-main {
+        padding-bottom: 17vh;
+    }
+    .first-page-clients{
+        padding-bottom: 6vh;
+    }
+    .second-page-menu-title{
+        font-size: 22px;
+    }
+    .second-page-menu-ingredients{
+        font-size: 18px;
+    }
+    .second-page-head{
+        font-size: 34px;
+
+    }
+    .second-page-cart-head {
+        font-size: 30px;
+    }
+    .second-page-cart-amount div{
+        font-size: 17px;
+
+    }
+    .second-page-cart-list{
+        font-size: 15px;
+    }
+    .second-page-cart-list-weights{
+        margin-right: 15px;
+    }
+    .second-page-cart-list{
+
+        padding-left: 9%;
+        padding-right: 9%;
+
+    }
+    .glyphicon-triangle-left{
+        padding-left: 2px;
+
+    }
+    .glyphicon-triangle-right{
+        padding-left: 3.5px;
+    }
+    .second-page-other{
+        padding-top: 20px;
+        font-size: 16px;
+        font-family: "Roboto Condensed";
+    }
+    .second-page-other-text{
+        padding-left: 50px;
+    }
+    .second-page-other .row{
+        padding-bottom: 25px;
+    }
 }
