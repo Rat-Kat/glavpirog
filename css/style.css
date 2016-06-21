@@ -20,6 +20,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 7.5%;
 }
 .first-page-header-logo{
     width: 160px;
@@ -55,7 +56,8 @@ body{
     text-align: center;
     border-radius: 20px;
     padding: 0;
-    margin-left: -17px;
+    margin-top: 10px;
+    margin-left: -19px;
     background-color: #faa633;
 
 }
@@ -83,4 +85,65 @@ body{
 .dropdown-menu li a:hover, .dropdown-menu li a:focus{
     background-color: #73b23b;
     color: #fff;
+}
+.dropdown-menu:after{
+    content: '';
+    position: absolute;
+    left: 17px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #73b23b;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #73b23b;
+}
+.first-page-header-contact{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.first-page-header-contact-phone{
+    font-size: 22px;
+    font-family: "Ubuntu";
+    font-weight: bold;
+}
+.first-page-main {
+    text-align: center;
+}
+.first-page-main-text{
+    font-size: 65px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    text-shadow: 0px 2px 1px #000;
+}
+.first-page-main-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+    width: 250px;
+    height: 55px;
+    background-color: #7fb137;
+    border-radius: 30px;
+    box-shadow: 0px 20px 35px 0px rgba(32, 43, 7, 0.25);
+    font-size: 18px;
+    font-family: "Core Sans A 55 Medium";
+    color: #fff;
+    text-transform: uppercase;
+}
+.first-page-main-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.first-page-main-btn:active{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
