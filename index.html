@@ -11,11 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animation.css" type="text/css" />
     <link rel="stylesheet" href="css/fontello.css" type="text/css" />
-    <link rel="stylesheet" href="css/fontello-codes.css" type="text/css" />
-    <link rel="stylesheet" href="css/fontello-embedded.css" type="text/css" />
-    <link rel="stylesheet" href="css/fontello-ie7.css" type="text/css" />
-    <link rel="stylesheet" href="css/fontello-ie7-codes.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -306,6 +302,7 @@
 <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-body second-page-order" role="document">
         <div class="second-page-order-left">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="second-page-order-head">
                 <div class="second-page-order-title">Оформление заказа</div>
                 <p class="second-page-order-text">Закажите свои пироги накануне, и мы испечем
@@ -321,8 +318,13 @@
                         <input class="second-page-address-form-surname form-control" type="text" placeholder="Фамилия" required>
                     </div>
                     <div class="form-horizontal">
-                        <select class="second-page-address-subway form-control" required>
+                        <select class="second-page-address-subway form-control">
                             <option>Ближайшее метро</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -358,44 +360,43 @@
             </form>
         </div>
         <div class="second-page-order-right">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="second-page-order-cart">
-                <div class="second-page-cart-ammount second-page-order-cart-ammount">
-                    <p class="second-page-cart-head">Ваша корзина</p>
-                    <div class="second-page-cart-amount-sum">
-                        <span class="icon-shopping_cart"></span><span class="second-page-cart-sum-text">&nbsp;Сумма заказа:</span>
-                        <span class="second-page-cart-sum-numbers">1780</span>
+                <div class="second-page-order-cart-amount">
+                    <p class="second-page-order-cart-head">Ваша корзина</p>
+                    <div class="second-page-order-cart-amount-sum">
+                        <span class="icon-shopping_cart"></span><span class="second-page-order-cart-sum-text">&nbsp;Сумма заказа:</span>
+                        <span class="second-page-order-cart-sum-numbers">1780</span>
                     </div>
-                    <div class="second-page-cart-amount-weight">
-                        <span class="icon-shopping_bag"></span><span class="second-page-cart-sum-text">&nbsp;Общий вес:&nbsp;<span>1.5 кг</span></span>
-                        <span class="second-page-cart-sum-total">Всего:&nbsp; <span>3 шт.</span></span>
+                    <div class="second-page-order-cart-amount-weight">
+                        <span class="icon-shopping_bag"></span><span class="second-page-order-cart-sum-text">&nbsp;Общий вес:&nbsp;<span>1.5 кг</span></span>
+                        <span class="second-page-order-cart-sum-total">Всего:&nbsp; <span>3 шт.</span></span>
                     </div>
                 </div>
-                <div class="second-page-cart-list second-page-order-cart-list">
-                    <div class="second-page-cart-list-row">
-                        <div class="second-page-cart-list-weights">
-                            <span class="second-page-cart-list-weight-green">0.5</span>
-                            <span class="second-page-cart-list-weight">1</span>
+                <div class="second-page-order-cart-list">
+                    <div class="second-page-order-cart-list-row">
+                        <div class="second-page-order-cart-list-weights">
+                            <span class="second-page-order-cart-list-weight-green">0.5</span>
+                            <span class="second-page-order-cart-list-weight">1</span>
                         </div>
-                        <div class="second-page-cart-list-chosen">С курицей и помидорами</div>
-                        <div class="second-page-cart-list-totals">
+                        <div class="second-page-order-cart-list-chosen">С курицей и помидорами</div>
+                        <div class="second-page-order-cart-list-totals">
                             <span class="glyphicon glyphicon-triangle-left"></span>
-                            <span class="second-page-cart-list-total">1</span>
+                            <span class="second-page-order-cart-list-total">1</span>
                             <span class="glyphicon glyphicon-triangle-right"></span>
-                            <span class="second-page-cart-list-total-weight">1040</span>
+                            <span class="second-page-order-cart-list-total-weight">1040</span>
                         </div>
                     </div>
-                    <div class="second-page-cart-list-row">
-                        <div class="second-page-cart-list-weights">
-                            <span class="second-page-cart-list-weight-green">0.5</span>
-                            <span class="second-page-cart-list-weight">1</span>
+                    <div class="second-page-order-cart-list-row">
+                        <div class="second-page-order-cart-list-weights">
+                            <span class="second-page-order-cart-list-weight-green">0.5</span>
+                            <span class="second-page-order-cart-list-weight">1</span>
                         </div>
-                        <div class="second-page-cart-list-chosen">С говядиной и картофелем</div>
-                        <div class="second-page-cart-list-totals">
+                        <div class="second-page-order-cart-list-chosen">С говядиной и картофелем</div>
+                        <div class="second-page-order-cart-list-totals">
                             <span class="glyphicon glyphicon-triangle-left"></span>
-                            <span class="second-page-cart-list-total">2</span>
+                            <span class="second-page-order-cart-list-total">2</span>
                             <span class="glyphicon glyphicon-triangle-right"></span>
-                            <span class="second-page-cart-list-total-weight">7400</span>
+                            <span class="second-page-order-cart-list-total-weight">7400</span>
                         </div>
                     </div>
 
@@ -424,6 +425,7 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>
