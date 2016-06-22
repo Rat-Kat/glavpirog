@@ -14,4 +14,3 @@ $(function () {
         {pickDate: false, language: 'ru'}
     );
 });
-
