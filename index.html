@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="button-text">Информация</div>
                             </div>
-                            <ul class="nav navbar-nav dropdown-menu">
+                            <ul class="nav navbar-nav first-page-header-navbar-menu-dropdown-menu dropdown-menu">
                                 <li><a href="#">О нас</a></li>
                                 <li><a href="#">Контакты</a></li>
                                 <li><a href="#">Меню</a></li>
@@ -60,14 +60,16 @@
             <a href="#second_page" type="button" class="first-page-main-btn">Попробовать</a>
         </section>
         <section class="first-page-clients container">
-            <div class="first-page-clients-arrow-left"></div>
+           <button class="first-page-clients-prev"><span class="first-page-clients-arrow-left"></span></button>
             <div class="first-page-clients-gallery">
-                <img src="img/obuhov.png" alt="">
-                <img src="img/viessmann.png" alt="">
-                <img src="img/obuhov.png" alt="">
-                <img src="img/viessmann.png" alt="">
+                <ul>
+                    <li><img src="img/obuhov.png" alt=""></li>
+                    <li><img src="img/viessmann.png" alt=""></li>
+                    <li><img src="img/obuhov.png" alt=""></li>
+                    <li><img src="img/viessmann.png" alt=""></li>
+                </ul>
             </div>
-            <div class="first-page-clients-arrow-right"></div>
+            <button class="first-page-clients-next"><span class="first-page-clients-arrow-right"></span></button>
         </section>
 
     </div>
@@ -83,7 +85,7 @@
                     <span class="icon-ok-circled-text">&nbsp;&nbsp;&nbsp;&nbsp;Повышаем спрос на продукцию</span>
                 </div>
             </div>
-            <div class="first-to-second-page-statistics statistik">
+            <div class="first-to-second-page-statistics">
                 <div class="first-to-second-page-work">
                     <span class="over">></span><span class="first-to-second-page-statistics-numbers number-7">0</span>
                     <p class="first-to-second-page-statistics-text">лет успешной работы</p>
@@ -432,6 +434,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
 <script src="js/jquery.animateNumber.min.js"></script>
 <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
