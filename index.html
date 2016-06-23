@@ -307,9 +307,19 @@
                 <div class="second-page-order-title">Оформление заказа</div>
                 <p class="second-page-order-text">Закажите свои пироги накануне, и мы испечем
                     их специально для вас, к удобному вам времени. Вы можете забрать пироги в нашем баре или попросить нас доставить их к вам домой или в офис.</p>
-                <button class="second-page-delivery-btn">Доставка</button>
-                <button class="second-page-pickup-btn">Забрать в пекарне</button>
+                <div class="form-group">
+                    <label for="checked"></label>
+                    <div class="input-group">
+                        <div id="radioBtn" class="btn-group">
+                            <a class="second-page-delivery-btn active" data-toggle="checked" data-title="Доставка">Доставка</a>
+                            <a class="second-page-pickup-btn notActive" data-toggle="checked" data-title="Забрать в пекарне">Забрать в пекарне</a>
+                        </div>
+                        <input type="hidden" name="checked" id="checked">
+                    </div>
+                </div>
+
             </div>
+
             <form class="form-group">
                 <div class="second-page-order-address-form ">
                     <label class="second-page-order-form-title">Адрес:</label>
