@@ -34,12 +34,24 @@ $(document).ready(function(){
         });
     }
 
-
-
-
     $('.number-7').animateNumber({number: 7}, 3000);
     $('.number-2000').animateNumber({number: 2000}, 3000);
     $('.number-2457').animateNumber({number: 2457}, 3000);
+
+    $('.glyphicon-triangle-left').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.glyphicon-triangle-right').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
 
 
 
@@ -50,8 +62,6 @@ $(document).ready(function(){
         {pickDate: false, language: 'ru'}
     );
     $('.second-page-address-subway').styler();
-
-
 
 });
 
