@@ -254,10 +254,14 @@
                         <button class="second-page-cart-amount-btn" data-toggle="modal" data-target="#order">Оформить заказ</button>
                     </div>
                     <div class="second-page-cart-list">
-                        <div class="second-page-cart-list-row">
-                            <div class="second-page-cart-list-weights">
-                                <span class="second-page-cart-list-weight-green">0.5</span>
-                                <span class="second-page-cart-list-weight">1</span>
+                        <div class="second-page-cart-list-row" >
+                            <div class="second-page-cart-list-weights" data-toggle="buttons">
+                                <label class="btn second-page-cart-list-weight-green">
+                                    <input type="checkbox" name="options" autocomplete="off" checked>0.5
+                                </label>
+                                <label class="btn second-page-cart-list-weight">
+                                    <input type="checkbox" name="options" autocomplete="off">1
+                                </label>
                             </div>
                             <div class="second-page-cart-list-chosen">С курицей и помидорами</div>
                             <div class="second-page-cart-list-totals">
@@ -267,10 +271,16 @@
                                 <span class="second-page-cart-list-total-weight">1040</span>
                             </div>
                         </div>
-                        <div class="second-page-cart-list-row">
+                        <div class="second-page-cart-list-row" id="second-page-cart-list-row2">
                             <div class="second-page-cart-list-weights">
-                                <span class="second-page-cart-list-weight-green">0.5</span>
-                                <span class="second-page-cart-list-weight">1</span>
+                                <div class="second-page-cart-list-weights" data-toggle="buttons">
+                                    <label class="btn second-page-cart-list-weight-green">
+                                        <input type="checkbox" name="options" autocomplete="off" checked>0.5
+                                    </label>
+                                    <label class="btn second-page-cart-list-weight">
+                                        <input type="checkbox" name="options" autocomplete="off">1
+                                    </label>
+                                </div>
                             </div>
                             <div class="second-page-cart-list-chosen">С говядиной и картофелем</div>
                             <div class="second-page-cart-list-totals">
@@ -310,14 +320,15 @@
                 <p class="second-page-order-text">Закажите свои пироги накануне, и мы испечем
                     их специально для вас, к удобному вам времени. Вы можете забрать пироги в нашем баре или попросить нас доставить их к вам домой или в офис.</p>
                 <div class="form-group">
-                    <label for="checked"></label>
-                    <div class="input-group">
-                        <div id="radioBtn" class="btn-group">
-                            <a class="second-page-delivery-btn active" data-toggle="checked" data-title="Доставка">Доставка</a>
-                            <a class="second-page-pickup-btn notActive" data-toggle="checked" data-title="Забрать в пекарне">Забрать в пекарне</a>
-                        </div>
-                        <input type="hidden" name="checked" id="checked">
+                      <div class="input-group" data-toggle="buttons">
+                        <label class="btn second-page-delivery-btn">
+                            <input type="radio" name="options" autocomplete="off" checked>Доставка
+                        </label>
+                        <label class="btn second-page-pickup-btn">
+                            <input type="radio" name="options" autocomplete="off">Забрать в пекарне
+                        </label>
                     </div>
+
                 </div>
 
             </div>
@@ -386,9 +397,13 @@
                 </div>
                 <div class="second-page-order-cart-list">
                     <div class="second-page-order-cart-list-row">
-                        <div class="second-page-order-cart-list-weights">
-                            <span class="second-page-order-cart-list-weight-green">0.5</span>
-                            <span class="second-page-order-cart-list-weight">1</span>
+                        <div class="second-page-cart-list-weights" data-toggle="buttons">
+                            <label class="btn second-page-cart-list-weight-green">
+                                <input type="checkbox" name="options" autocomplete="off" checked>0.5
+                            </label>
+                            <label class="btn second-page-cart-list-weight">
+                                <input type="checkbox" name="options" autocomplete="off">1
+                            </label>
                         </div>
                         <div class="second-page-order-cart-list-chosen">С курицей и помидорами</div>
                         <div class="second-page-order-cart-list-totals">
@@ -399,9 +414,13 @@
                         </div>
                     </div>
                     <div class="second-page-order-cart-list-row">
-                        <div class="second-page-order-cart-list-weights">
-                            <span class="second-page-order-cart-list-weight-green">0.5</span>
-                            <span class="second-page-order-cart-list-weight">1</span>
+                        <div class="second-page-cart-list-weights" data-toggle="buttons">
+                            <label class="btn second-page-cart-list-weight-green">
+                                <input type="checkbox" name="options" autocomplete="off" checked>0.5
+                            </label>
+                            <label class="btn second-page-cart-list-weight">
+                                <input type="checkbox" name="options" autocomplete="off">1
+                            </label>
                         </div>
                         <div class="second-page-order-cart-list-chosen">С говядиной и картофелем</div>
                         <div class="second-page-order-cart-list-totals">
