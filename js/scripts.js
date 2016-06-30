@@ -38,21 +38,36 @@ $(document).ready(function(){
     $('.number-2000').animateNumber({number: 2000}, 3000);
     $('.number-2457').animateNumber({number: 2457}, 3000);
 
+
     $('.glyphicon-triangle-left').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
+        var input = $(this).parent().find('.second-page-cart-list-total');
+        var count = parseInt(input.val()) - 1;
         count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
+        input.val(count);
+        input.change();
+
+        var sum = $(this).parent().find('.second-page-order-cart-list-total-weight');
+        sum.val(parseInt(sum.val() * $(".second-page-cart-list-total").val()));
+        sum.change();
+
         return false;
+
     });
     $('.glyphicon-triangle-right').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
+        var input = $(this).parent().find('.second-page-cart-list-total');
+        input.val(parseInt(input.val()) + 1);
+        input.change();
+
+        var sum = $(this).parent().find('.second-page-order-cart-list-total-weight');
+        sum.val(parseInt(sum.val() * $(".second-page-cart-list-total").val()));
+        sum.change();
+
         return false;
     });
 
+    var sum = $(this).parent().find('.second-page-order-cart-list-total-weight');
+    sum.val(parsInt(sum.val() * $(".second-page-cart-list-total").val()));
+    sum.change();
 
 
     $('.second-page-order-form-date').datetimepicker(
